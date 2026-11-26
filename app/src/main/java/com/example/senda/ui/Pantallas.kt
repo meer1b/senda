@@ -13,18 +13,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun PantallaPerfiles(onIrARutinas: () -> Unit) {
-    Column(
-        modifier = Modifier.fillMaxSize().safeDrawingPadding().padding(24.dp),
-        verticalArrangement = Arrangement.spacedBy(16.dp)
-    ) {
-        Text("Perfiles", style = MaterialTheme.typography.headlineMedium)
-        Text("Pantalla vacía (la rellena T03)")
-        Button(onClick = onIrARutinas) { Text("Ir a Rutinas") }
-    }
-}
-
-@Composable
 fun PantallaRutinas(onIrACitas: () -> Unit, onVolver: () -> Unit) {
     Column(
         modifier = Modifier.fillMaxSize().safeDrawingPadding().padding(24.dp),
